@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwindConfig.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="./index.js">
+
+  </script>
+
+</head>
+<body>
+
+  <main class="grid place-items-center relative bg-Red bg-intro bg-cover xl:w-full xl:h-screen lg:w-full lg:h-screen">
+    <article class="font-Poppins flex flex-col space-y-8 m-9 xl:m-0 lg:m-0 xl:flex-row lg:flex-row xl:space-x-4 lg:space-x-4 xl:w-4/5 lg:w-4/5 h-fit">
+
+      <section class="xl:w-1/2 lg:w-1/2 grid content-center">
+        <h1 class="mb-6 text-white text-3xl font-bold text-center xl:text-5xl lg:text-5xl xl:text-left lg:text-left">Learn to code by watching others</h1>
+        <p class="text-white text-[16px] pr-0 xl:pr-6 lg:pr-6 text-center xl:text-left lg:text-left">See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
+      </section>
+
+      <section class="xl:w-1/2 lg:w-1/2 xl:px-4 lg:px-4 grid content-center">
+        <p class="text-white bg-Blue p-6 px-12 xl:py-3 lg:py-3 text-center rounded-lg">
+          <span class="font-semibold">Try it free 7 days</span> then $20/mo. thereafter
+        </p>
+
+        <form class="bg-white mt-4 p-8 rounded-lg flex flex-col">
+          <input
+            class="rounded-lg text-DarkBlue font-semibold border-[1px] border-GrayishBlue focus:outline-none focus:border-[1px] focus:border-Blue p-4 px-6"
+            type="text" placeholder="First Name" name="First Name"/>
+          <input
+            class="mt-4 rounded-lg text-DarkBlue font-semibold border-[1px] border-GrayishBlue focus:outline-none focus:border-[1px] focus:border-Blue p-4 px-6"
+            type="text" placeholder="Second Name" name="Second Name"/>
+          <input
+            class="mt-4 rounded-lg text-DarkBlue font-semibold border-[1px] border-GrayishBlue focus:outline-none focus:border-[1px] focus:border-Blue p-4 px-6"
+            type="email" placeholder="Email Address" />
+          <input
+            class="mt-4 rounded-lg text-DarkBlue font-semibold border-[1px] border-GrayishBlue focus:outline-none focus:border-[1px] focus:border-Blue p-4 px-6"
+            type="password" placeholder="Password" />
+
+          <input class="hover:opacity-75 uppercase mt-4 rounded-lg text-center cursor-pointer bg-Green text-white font-semibold border-[2px] focus:outline-none p-4 px-6"
+            type="button" id="submit" value="Claim your free trial" />
+          <p class="mt-4 text-xs text-center text-GrayishBlue">By clicking the button, you are agreeing to our 
+            <span class="text-xs text-Red font-semibold">Terms and Services</span>
+          </p>
+
+        </form>
+
+
+      </section>
+    </article>
+
+    <footer class="absolute bottom-3 text-white">
+      <p class="attribution">
+        Challenge by <a class="text-blue-200" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a class="text-blue-200" href="https://www.frontendmentor.io/profile/muhrizmrz">@muhrizmrz</a>.
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
